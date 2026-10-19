@@ -115,7 +115,7 @@ macro_rules! impl_dshot_traits {
             fn reverse(&mut self, reverse: [bool; $n]) {
                 $(
                     let cmd = if reverse[$idx] {
-                        Command::SpinDirectonReversed
+                        Command::SpinDirectionReversed
                     } else {
                         Command::SpinDirectionNormal
                     };
@@ -167,7 +167,7 @@ macro_rules! impl_dshot_traits {
             async fn reverse_async(&mut self, reverse: [bool; $n]) {
                 $(
                     let cmd = if reverse[$idx] {
-                        Command::SpinDirectonReversed
+                        Command::SpinDirectionReversed
                     } else {
                         Command::SpinDirectionNormal
                     };

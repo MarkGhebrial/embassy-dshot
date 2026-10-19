@@ -47,7 +47,7 @@ pub const fn raw_to_command(cmd: u16) -> Option<Command> {
         13 => Some(Command::ExtendedTelemetryEnable),
         14 => Some(Command::ExtendedTelemetryDisable),
         20 => Some(Command::SpinDirectionNormal),
-        21 => Some(Command::SpinDirectonReversed),
+        21 => Some(Command::SpinDirectionReversed),
         22 => Some(Command::Led0On),
         23 => Some(Command::Led1On),
         24 => Some(Command::Led2On),

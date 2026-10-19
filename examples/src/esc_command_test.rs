@@ -152,10 +152,10 @@ async fn main(_spawner: Spawner) {
 
     arm_esc(&mut dshot, 1000).await;
 
-    info!("Setting SpinDirectonReversed (6x)...");
+    info!("Setting SpinDirectionReversed (6x)...");
     defmt::unwrap!(
         dshot
-            .send_command_repeated_async(Command::SpinDirectonReversed, SETTINGS_REPEAT)
+            .send_command_repeated_async(Command::SpinDirectionReversed, SETTINGS_REPEAT)
             .await
     );
     Timer::after(Duration::from_millis(100)).await;
